@@ -1,17 +1,19 @@
 Package: automultinomial
-Title: Autologistic and Automultinomial Spatial Regression and Variable
-        Selection
-Version: 1.0.0
+Type: Package
+Title: Models for Spatially Correlated Data
+Version: 2.0.0
 Author: Stephen Berg [aut, cre], Rao Fu [aut], Jun Zhu [ths]
+Imports: Matrix, igraph, numDeriv, stats
+Suggests: utils, rmarkdown, knitr, ggplot2
 Maintainer: Stephen Berg <saberg2@wisc.edu>
-Description: Contains functions for autologistic variable selection and parameter estimation for spatially correlated categorical data (including k>2). The main function is MPLE. Capable of fitting the centered autologistic model described in Caragea and Kaiser (2009)<doi:10.1198/jabes.2009.07032>, as well as the traditional autologistic model of Besag (1974)<http://www.jstor.org/stable/2984812>. 
-Depends: R (>= 3.2.0)
-Imports: graphics, Hmisc, igraph, Matrix, MASS, stats, utils
-License: GPL-2 | GPL-3
+Description: Fits the autologistic model described in Besag's famous 1974 paper on auto- models <http://www.jstor.org/stable/2984812>. Fits a multicategory generalization of the autologistic model when there are more than 2 response categories. Provides support for both asymptotic and bootstrap confidence intervals. For full model descriptions and a guide to the use of this package, please see the vignette.
+License: GPL-2
+Encoding: UTF-8
 LazyData: true
-Suggests: testthat, numDeriv, knitr, rmarkdown
-RoxygenNote: 5.0.1
+RoxygenNote: 6.1.0
+BugReports: https://github.com/stephenberg/automultinomial/issues
+VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2016-10-04 21:30:01 UTC; Stephen
+Packaged: 2018-10-31 16:59:37 UTC; berg
 Repository: CRAN
-Date/Publication: 2016-10-05 09:29:49
+Date/Publication: 2018-10-31 18:10:03 UTC
